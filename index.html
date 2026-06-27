@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R08 Apps</title>
+
+  <style>
+    :root {
+      --text: #182033;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --border: #e5e7eb;
+      --accent: #5b6cff;
+      --background: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(91, 108, 255, 0.10), transparent 35%),
+        var(--background);
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 24px 40px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .logo {
+      max-width: 360px;
+      width: 80%;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 44px;
+      margin: 0 0 12px;
+      letter-spacing: -0.04em;
+    }
+
+    .tagline {
+      font-size: 22px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 28px 22px;
+      text-align: center;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      background: #22c55e;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge.soon {
+      background: #8b5cf6;
+    }
+
+    .badge.dev {
+      background: #3b82f6;
+    }
+
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      margin-bottom: 18px;
+      object-fit: cover;
+      background: #eef2ff;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .links {
+      text-align: center;
+      margin: 40px 0 24px;
+    }
+
+    .links a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 40px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .tagline {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <img src="images/r08-logo.png" alt="R08 logo" class="logo" />
+      <h1>R08</h1>
+      <p class="tagline">Thoughtfully crafted apps<br />for everyday life.</p>
+    </header>
+
+    <section class="apps">
+      <article class="card">
+        <span class="badge">Available now</span>
+        <img src="images/dice4you-icon.png" alt="Dice4You icon" class="app-icon" />
+        <h2>Dice4You</h2>
+        <p>A modern dice game inspired by a classic.</p>
+      </article>
+
+      <article class="card">
+        <span class="badge soon">Coming soon</span>
+        <img src="images/dish4you-icon.png" alt="Dish4You icon" class="app-icon" />
+        <h2>Dish4You</h2>
+        <p>Your personal recipe companion.</p>
+      </article>
+
+      <article class="card">
+        <span class="badge dev">In development</span>
+        <img src="images/dice4you-ai-icon.png" alt="Dice4You AI icon" class="app-icon" />
+        <h2>Dice4You AI</h2>
+        <p>A new way to play against a smart opponent.</p>
+      </article>
+
+      <article class="card">
+        <span class="badge dev">In development</span>
+        <img src="images/dice4two-icon.png" alt="Dice4Two icon" class="app-icon" />
+        <h2>Dice4Two</h2>
+        <p>Play together. Anytime, anywhere.</p>
+      </article>
+    </section>
+
+    <nav class="links">
+      <a href="mailto:support@example.com">Support</a>
+      <a href="#">Privacy</a>
+      <a href="mailto:support@example.com">Contact</a>
+    </nav>
+
+    <footer>
+      © 2026 R08. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
